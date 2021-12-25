@@ -7,6 +7,9 @@ TagManager:
   - ScreenBorder
   - Brick
   - GameOver
+  - Monster
+  - Ball
+  - ScreenBorderTop
   layers:
   - Default
   - TransparentFX
