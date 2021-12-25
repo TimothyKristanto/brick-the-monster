@@ -38,7 +38,16 @@ public class BallMovement : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
 
-        Vector3 direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
-        rigidbody2D.velocity = direction * Mathf.Max(lastVelocity.magnitude, 5f);
+        if(collision.gameObject.tag == "Player")
+        {
+            horizontalMovement = Random.Range(0, 2) == 0 ? -1.5f : 1.5f;
+            rigidbody2D.velocity = new Vector2(horizontalMovement, 5);
+
+        }
+        else
+        {
+            Vector3 direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
+            rigidbody2D.velocity = direction * Mathf.Max(lastVelocity.magnitude, 0f);
+        }
     }
 }

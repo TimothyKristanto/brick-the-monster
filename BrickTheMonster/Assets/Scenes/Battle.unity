@@ -382,7 +382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &247590136
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -695,7 +695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &420960844
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -973,7 +973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &645563090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1038,7 +1038,7 @@ Transform:
   m_LocalScale: {x: 2.5, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &645563092
 CapsuleCollider2D:
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 688431722}
   m_Layer: 0
   m_Name: ScreenBorder
-  m_TagString: ScreenBorder
+  m_TagString: ScreenBorderTop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1138,7 +1138,7 @@ Transform:
   m_LocalScale: {x: 20, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &688431722
 BoxCollider2D:
@@ -1183,7 +1183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &766502504
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1281,7 +1281,7 @@ GameObject:
   - component: {fileID: 841965584}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1523,6 +1523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 906816532}
+  - component: {fileID: 906816533}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1538,12 +1539,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906816531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3571294, y: -0.2045928, z: -11.23906}
+  m_LocalPosition: {x: 0, y: 3.98, z: -11.23906}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &906816533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906816531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6181c7c2e881bfb4e882113a8f2e831b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelUI: {fileID: 624229624}
+  scoreUI: {fileID: 1506239828}
+  monster: {fileID: 4244982154302288450, guid: 21b1464e7baba22498e17f7a3ab23134, type: 3}
+  brick1: {fileID: 645563089}
+  brick2: {fileID: 1591127205}
+  brick3: {fileID: 766502503}
+  brick4: {fileID: 420960843}
+  brick5: {fileID: 247590135}
 --- !u!1 &953681410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,7 +1647,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &953681413
 BoxCollider2D:
@@ -1736,7 +1757,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1060484305
 BoxCollider2D:
@@ -2183,7 +2204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &1591127206
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2628,7 +2649,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.01
 --- !u!114 &1967450984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2718,7 +2739,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7065b99fac61f904abac355acb890b9b, type: 3}
-    m_FontSize: 45
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2750,7 +2771,7 @@ GameObject:
   - component: {fileID: 2046616177}
   m_Layer: 0
   m_Name: Border
-  m_TagString: Untagged
+  m_TagString: GameOver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
