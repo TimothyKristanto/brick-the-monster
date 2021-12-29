@@ -923,7 +923,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 7065b99fac61f904abac355acb890b9b, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 56
     m_Alignment: 1
@@ -1979,7 +1979,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 7065b99fac61f904abac355acb890b9b, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
@@ -2059,7 +2059,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 7065b99fac61f904abac355acb890b9b, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 2
@@ -2169,7 +2169,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 7065b99fac61f904abac355acb890b9b, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
@@ -2178,7 +2178,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit to main menu
+  m_Text: Quit
 --- !u!222 &1582765695
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2739,9 +2739,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7065b99fac61f904abac355acb890b9b, type: 3}
-    m_FontSize: 40
+    m_FontSize: 25
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 56
     m_Alignment: 4

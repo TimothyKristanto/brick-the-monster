@@ -369,7 +369,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.1
+  m_fontSize: 30
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -771,6 +771,7 @@ GameObject:
   - component: {fileID: 1830186939}
   - component: {fileID: 1830186938}
   - component: {fileID: 1830186937}
+  - component: {fileID: 1830186940}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -835,7 +836,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7065b99fac61f904abac355acb890b9b, type: 3}
     m_FontSize: 22
-    m_FontStyle: 3
+    m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 40
@@ -854,6 +855,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830186935}
   m_CullTransparentMesh: 1
+--- !u!114 &1830186940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830186935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62ce649f1647b14c913c7203634d8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreUI: {fileID: 1830186938}
 --- !u!1 &1999155255
 GameObject:
   m_ObjectHideFlags: 0

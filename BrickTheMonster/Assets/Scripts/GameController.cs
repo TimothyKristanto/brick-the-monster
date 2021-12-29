@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     public GameObject brick5;
 
     private int level = 1;
-    private long score = 0;
+    private int score = 0;
     private long deathCounter = 0;
 
     // Start is called before the first frame update
@@ -69,6 +69,11 @@ public class GameController : MonoBehaviour
     {
         GameObject newMonster = Instantiate(monster);
         newMonster.GetComponent<MonsterBehaviour>().gameController = this;
+    }
+
+    void OnDisable()
+    {
+        PlayerPrefs.SetInt("score", score);
     }
 
     IEnumerator instantiateMonsterWithTimer()
