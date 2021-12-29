@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class ToBattleScene : MonoBehaviour
+public class ChangeScene : MonoBehaviour
 {
     /*// Start is called before the first frame update
     void Start()
@@ -19,5 +19,10 @@ public class ToBattleScene : MonoBehaviour
     public void toBattleScene()
     {
         SceneManager.LoadScene("Battle");
+    }
+
+    public void toMainMenuScene()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
