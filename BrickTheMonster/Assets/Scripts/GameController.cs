@@ -82,7 +82,7 @@ public class GameController : MonoBehaviour
 
         while (i < level - 1)
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(3f);
             instantiateMonster();
             i++;
         }
